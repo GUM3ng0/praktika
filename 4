@@ -1,7 +1,7 @@
 using namespace std;
 #include <iostream>
 #include <string>
-bool ValidatePassword(const std::string& password)
+bool ValidatePassword(const string& password)
 {
     // Убедимся, что пароль длиннее 8 символов
     if (password.length() < 8) {
@@ -26,15 +26,15 @@ bool ValidatePassword(const std::string& password)
 
     int main() {
         setlocale(0, "");
-        std::string password;
-        std::cout << "Введите пароль: ";
-        std::cin >> password;
+        string password;
+        cout << "Введите пароль: ";
+        cin >> password;
 
         if (ValidatePassword(password)) {
-            std::cout << "Пароль допустим." << std::endl;
+            cout << "Пароль допустим." << endl;
         }
         else {
-            std::cout << "Пароль недопустим." << std::endl;
+            cout << "Пароль недопустим." << endl;
         }
 
         return 0;
